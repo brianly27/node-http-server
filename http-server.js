@@ -12,6 +12,10 @@ const server = http.createServer((req, res) => {
     res.end('<h1>Hello World</h1>')
 })
 
+//res.write and res.end can both send html to the client
+//notice that res.write prints after res.end
+
+
 server.listen(port, () => {
     console.log(`Server running at port ${port}`)
     console.log(process.env.port)
